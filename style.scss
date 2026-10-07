@@ -1,0 +1,339 @@
+html {
+    font-size: 20px;
+}
+// Couleurs
+$color-primary: #FF6B35;    // Orange (header, boutons, accents)
+$color-dark: #1A1A2E;       // Bleu nuit (titres, footer)
+$color-light: #f9f9f9;      // Fond clair (section services)
+$color-white: #ffffff;      // Blanc
+
+// Typographie
+$font-size-h2: 2rem;
+$font-size-text: 1.3rem;
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    background-color: $color-primary;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+     font-size: 1.1rem;
+    }
+    .logo h1 {
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero-img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    max-width: 50%;
+    transform: translateY(0);
+    text-align: right;
+}
+#searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+}
+.hero-text h2 {
+    font-size: $font-size-h2;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 2px 2px 8px rgba(255,255,255,0.8);
+    text-transform: uppercase;
+}
+.hero-text p {
+    font-size: 1.8rem;
+    color: black;
+    text-shadow: 1px 1px 6px rgba(255,255,255,0.8);
+    margin-bottom: 20px;
+}
+
+.services {
+    padding: 60px 30px;
+    background-color: $color-light;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: $font-size-h2;
+    color: $color-dark;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-decoration: none;
+    display: block;
+}
+.service-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: $color-primary;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.service p {
+    font-size: $font-size-text;
+    color: black;
+    text-decoration: none;
+}
+
+/* QUI SOMMES-NOUS */
+.apropos {
+    padding: 60px 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.apropos h2 {
+    font-size: $font-size-h2;
+    color: $color-dark;
+    margin-bottom: 20px;
+}
+
+.apropos p {
+    font-size: $font-size-text;
+    color: $color-dark;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+   
+/* BILAN DE COMPÉTENCES */
+.bilan {
+    padding: 60px 30px;
+    background-color: $color-light;
+    text-align: center;
+}
+
+.bilan h2 {
+    font-size: $font-size-h2;
+    color: $color-dark;
+    margin-bottom: 10px;
+}
+
+.bilan > p {
+    font-size: $font-size-text;
+    color: $color-dark;
+    margin-bottom: 30px;
+}
+
+.question h3 {
+    font-size: 1.3rem;
+    color: $color-dark;
+    margin-bottom: 20px;
+}
+
+.reponse {
+    background-color: white;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    padding: 12px 20px;
+    margin: 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reponse:hover {
+    background-color: $color-primary;
+    color: white;
+}
+
+.resultat {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.resultat p {
+    font-size:$font-size-text;
+    color: $color-dark;
+    margin-bottom: 20px;
+}
+
+.resultat a {
+    display: inline-block;
+    background-color: $color-primary;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* CONTACT */
+.contact {
+    padding: 60px 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: $font-size-h2;
+    color: $color-dark;
+    margin-bottom: 30px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    color: $color-dark;
+}
+
+
+.contact textarea {
+    height: 150px;
+}
+
+.contact button {
+    background-color: $color-primary;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 30px;
+    font-size: $font-size-text;
+    color: $color-dark;
+}
+
+/* FOOTER */
+footer {
+    background-color: $color-dark;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+/* RESPONSIVE - MOBILE */
+@media (max-width: 768px) {
+
+    /* Navbar en colonne */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    /* Services en 1 colonne au lieu de 3 */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Texte hero plus petit */
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+/* HAMBURGER */
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+.nav-open {
+    display: flex !important;
+    flex-direction: column;
+}
+
+/* ANIMATION SCROLL */
+.service, .hero-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.service.visible, .hero-text.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+    nav {
+        display: none;
+        width: 100%;
+    }
+}

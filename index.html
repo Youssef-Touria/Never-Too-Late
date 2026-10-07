@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEVER TOO LATE - Insertion, Emploi & Formation</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+<header>
+    <div class="logo">
+        <h1>NEVER TOO LATE</h1>
+    </div>
+    <button class="burger">   
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <a href="#hero">Accueil</a>
+        <a href="#apropos">Qui sommes-nous</a>
+        <a href="#bilan">Bilan gratuit</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+    
+<section class="hero" id="hero">
+    <img src="hero.png" alt="hero NEVER TOO LATE" class="hero-img">
+
+    <div class="hero-text">
+        <h2>Bienvenue sur NEVER TOO LATE</h2>
+        <p>
+            Il n'est jamais trop tard pour trouver ta voie. 
+            On est là pour t'accompagner vers la formation, l'alternance et l'emploi.
+        </p>
+        
+        <div class="search-container">
+            <div class="search-form">
+                <input type="text" id="searchInput" placeholder="Rechercher un métier, une formation..." autocomplete="off">
+                <div id="suggestions" class="suggestions" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="apropos" id="apropos">
+    <h2>Qui sommes-nous</h2>
+    <p>
+        NEVER TOO LATE est une association qui accompagne les jeunes 
+        dans leur recherche de formation, d'alternance et d'emploi. 
+        Notre équipe de bénévoles et de conseillers met tout en œuvre 
+        pour t'aider à avancer, quel que soit ton parcours.
+    </p>
+</section>
+
+<section class="bilan" id="bilan">
+    <h2>Fais le point sur toi</h2>
+    <p>Réponds à ces quelques questions, ça t'aidera à voir plus clair.</p>
+
+    <div id="question1" class="question">
+        <h3>1. Qu'est-ce que tu as le plus envie de faire ?</h3>
+        <button class="reponse">Travailler avec les mains</button>
+        <button class="reponse">Aider les autres</button>
+        <button class="reponse">Être au contact du public</button>
+        <button class="reponse">Je ne sais pas encore</button>
+    </div>
+
+    <div id="resultat" class="resultat" style="display: none;">
+        <p>Merci d'avoir répondu ! La meilleure prochaine étape pour toi, c'est de faire un vrai bilan de compétences avec un professionnel.</p>
+        <a href="#contact">Contacte-nous pour qu'on t'oriente</a>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h2>Nos Services d'Accompagnement</h2>
+    <div class="services-grid">
+    
+        <a href="#contact" class="service">
+            <div class="service-icon">💼</div>
+            <h3>Orientation & Métiers</h3>
+            <p>Découvre les secteurs qui recrutent le plus en ce moment et trouve des fiches métiers simples d'accès.</p>
+        </a>
+        
+        <a href="#contact" class="service">
+            <div class="service-icon">📝</div>
+            <h3>Boîte à Outils CV</h3>
+            <p>Accède à des modèles de CV épurés et des exemples de lettres de motivation pour décrocher tes entretiens.</p>
+        </a>
+        
+        <a href="#contact" class="service">
+            <div class="service-icon">🤝</div>
+            <h3>Mentorat & Conseils</h3>
+            <p>Prends rendez-vous avec un conseiller ou un mentor bénévole pour simuler un entretien et lever tes blocages.</p>
+        </a>
+        
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Besoin d'aide ? Contactez-nous</h2>
+    <form action="send_message.php" method="POST">
+        <input type="text" name="name" placeholder="Votre prénom / nom" required />
+        <input type="email" name="email" placeholder="Votre adresse email" required />
+        <textarea name="message" placeholder="Dis-nous en quelques mots ce que tu recherches (Emploi, formation, aide administrative...)" required></textarea>
+        <button type="submit">Envoyer ma demande</button>
+    </form>
+    <div class="contact-info">
+        <p>📧 touriayoussef4@gmail.com</p>
+        <p>📞 +33 6 51 94 37 17</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 NEVER TOO LATE - Plateforme d'Accompagnement des Jeunes - Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+</body> 
+</html>
